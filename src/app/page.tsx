@@ -1,8 +1,10 @@
+import TaskStatus from "@/app/components/taskStatus";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <TaskStatus />
       {/* أزرار تسجيل الدخول والتسجيل في أعلى الصفحة على اليسار */}
       <div className="absolute top-4 left-4 flex gap-4">
         <Link
