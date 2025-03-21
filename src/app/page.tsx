@@ -1,3 +1,4 @@
+
 import TaskStatus from "@/app/components/taskStatus";
 import Link from "next/link";
 
@@ -29,5 +30,6 @@ export default function Home() {
 
       <footer></footer>
     </div>
+
   );
 }
