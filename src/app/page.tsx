@@ -1,4 +1,6 @@
-
+import Board from './components/Board';
+import Navbar from './components/Navbar';
+import { TaskProvider } from './components/TaskContext';
 import TaskStatus from "@/app/components/taskStatus";
 import Link from "next/link";
 
@@ -21,15 +23,18 @@ export default function Home() {
           Sign Up
         </Link>
       </div>
-      
+      <TaskProvider>
+      <div className="bg-gray-900">
+        <Navbar />
+        <Board />
+      </div>
+    </TaskProvider>
       {/* محتوى الصفحة */}
       <main className="flex flex-col gap-8 items-center sm:items-start justify-center h-full">
         <h1 className="text-2xl font-bold">Welcome to Our Platform</h1>
         <p className="text-gray-600">Choose an option above to get started.</p>
       </main>
-
       <footer></footer>
     </div>
-
   );
 }
