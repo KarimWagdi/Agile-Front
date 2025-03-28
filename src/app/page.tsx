@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Project from "../components/project";
+import Chat from "../components/chat"
 
 export default function Home() {
   return (
@@ -99,6 +100,7 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <Project/>
+    // <Project/>
+    <Chat/>
   );
 }
